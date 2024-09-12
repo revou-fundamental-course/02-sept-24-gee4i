@@ -7,6 +7,222 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="main-header"> 
+        <h1>Welcome to Learning Math</h1>
+        <p>Selamat datang di Learning Math :D</p>
+    </header>
     
+    <!-- tombol segitiga dan jajar genjang -->
+    <main>
+        <section class="selection-content"> 
+            <button type="button" class="selection-btn bisque-color">Segitiga</button>
+            <button type="button" class="selection-btn aqua-color">Jajar Genjang</button>
+        </section>
+
+            <!-- konten bagian kiri segitiga (luas) -->
+            <section id="segitiga-content" class="main-content"> 
+            <aside>
+                <header>
+                    <h1 class="luas-segitiga-header">Luas Segitiga</h1>
+                </header>
+
+                <article class="luas-segitiga-content"> 
+                    <div class="luas-segitiga-img"></div>
+                    <p>Rumus Luas Segitiga yaitu</p>
+                </article>
+
+                <article>
+                    <h4>L = 1/2 x a x t</h4>
+                </article>
+
+                <article>
+                    <p>Dimana: 
+                    <br>L = Luas
+                    <br>a = Panjang Alas
+                    <br>t = Tinggi
+                    </p>
+                </article>
+
+                <hr />
+
+                <form>
+                    <header>
+                        <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+                    </header>
+
+                    <div class="input-wrapper">
+                        <label for="panjang-alas">Panjang Alas</label>
+                        <input id="panjang-alas" type="number" />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="tinggi">Tinggi</label>
+                        <input id="tinggi" type="number" />
+                    </div>
+
+                    <p id="result-luas">Hasil Perhitungan:</p>
+
+                    <button type="button" onclick="luas()">Hitung</button>
+                    <br>
+                    <button type="button" onclick="resetFormLuas()" class="reset-luas">Reset</button>
+                </form>
+            </aside>
+
+            <!-- konten bagian kanan segitiga (keliling) -->
+            <aside>
+                <header>
+                    <h1 class="keliling-segitiga-header">Keliling Segitiga</h1>
+                </header>
+
+                <article class="keliling-segitiga-content"> 
+                    <div class="keliling-segitiga-img"></div>
+                    <p>Rumus keliling Segitiga yaitu</p>
+                </article>
+
+                <article>
+                    <h4>K = S1 + S2 + S3</h4>
+                </article>
+
+                <article>
+                    <p>Dimana: 
+                    <br>K = Keliling
+                    <br>S1 = Sisi A
+                    <br>S2 = Sisi B
+                    <br>S3 = Sisi C
+                    </p>
+                </article>
+
+                <hr />
+
+                <form>
+                    <header>
+                        <h1 class="keliling-segitiga-form-header">Hitung Keliling Segitiga</h1>
+                    </header>
+
+                    <div class="input-wrapper">
+                        <label for="sisi-a">S1</label>
+                        <input id="sisi-a" name="sisi-a" type="number" />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="sisi-b">S2</label>
+                        <input id="sisi-b" name="sisi-b" type="number" />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="sisi-c">S3</label>
+                        <input id="sisi-c" name="sisi-c" type="number" />
+                    </div>
+                    <p id="result-keliling">Hasil Perhitungan:</p>
+
+                    <button type="button" onclick="keliling()">Hitung</button>
+                    <br>
+                    <button type="button" onclick="resetFormKeliling()" class="reset-keliling">Reset</button>
+                </form>
+            </aside>
+        </section>
+
+        <!-- konten bagian kiri jajar genjang (luas) -->
+        <section id="jajar-genjang-content" class="main-content"> 
+            <aside>
+                <header>
+                    <h1 class="luas-jajar-genjang-header">Luas Jajar Genjang</h1>
+                </header>
+
+                <article class="luas-jajar-genjang-content"> 
+                    <div class="luas-jajar-genjang-img"></div>
+                    <p>Rumus Luas Jajar Genjang yaitu</p>
+                </article>
+                
+                <article>
+                    <h4>L = a x t</h4>
+                </article>
+
+                <article>
+                    <p>Dimana: 
+                    <br>L = Luas
+                    <br>a = Panjang Alas
+                    <br>t = Tinggi
+                    </p>
+                </article>
+
+                <hr />
+
+                <form>
+                    <header>
+                        <h1 class="luas-jajar-genjang-form-header">Hitung Luas Jajar Genjang</h1>
+                    </header>
+
+                    <div class="input-wrapper">
+                        <label for="panjang-alas-jg">Panjang Alas</label>
+                        <input id="panjang-alas-jg" type="number" />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="tinggi-jg">Tinggi</label>
+                        <input id="tinggi-jg" type="number" />
+                    </div>
+
+                    <p id="result-luas-jg">Hasil Perhitungan:</p>
+
+                    <button type="button" onclick="luasJajarGenjang()">Hitung</button>
+                    <br>
+                    <button type="button" onclick="resetFormLuasJajarGenjang()" class="reset-luas-jg">Reset</button>
+                </form>
+            </aside>
+
+            <!-- konten bagian kanan jajar genjang (keliling) -->
+            <aside>
+                <header>
+                    <h1 class="keliling-jajar-genjang-header">Keliling Jajar Genjang</h1>
+                </header>
+
+                <article class="keliling-jajar-genjang-content"> 
+                    <div class="keliling-jajar-genjang-img"></div>
+                    <p>Rumus Keliling Jajar Genjang yaitu</p>
+                </article>
+                
+                <article>
+                    <h4>K = 2(a + s)</h4>
+                </article>
+
+                <article>
+                    <p>Dimana: 
+                    <br>K = Keliling
+                    <br>a = Panjang Alas
+                    <br>s = Sisi Miring
+                    </p>
+                </article>
+
+                <hr />
+
+                <form>
+                    <header>
+                        <h1 class="keliling-jajar-genjang-form-header">Hitung Keliling Jajar Genjang</h1>
+                    </header>
+
+                    <div class="input-wrapper">
+                        <label for="panjang-alas-kjg">Panjang Alas</label>
+                        <input id="panjang-alas-kjg" type="number" />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="sisi-miring">Sisi Miring</label>
+                        <input id="sisi-miring" type="number" />
+                    </div>
+                    
+                    <p id="result-keliling-jg">Hasil Perhitungan:</p>
+
+                    <button type="button" onclick="kelilingJajarGenjang()">Hitung</button>
+                    <br>
+                    <button type="button" onclick="resetFormKelilingJajarGenjang()" class="reset-keliling-jg">Reset</button>
+                </form>
+            </aside>
+        </section>
+    </main>
+
+    <!-- bagian footer -->
+    <footer class="main-footer">
+        <p>© 2024 Faqih Muhammad Al-Ghifari. RevoU Basic Coding Test: Software Engineering.</p>
+    </footer>
+
+    <!-- Connect to JavaScript -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>

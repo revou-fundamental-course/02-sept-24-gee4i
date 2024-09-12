@@ -1,1 +1,170 @@
-/* ini css
+/* style untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* style untuk main-header*/
+.main-header {
+    text-align: center;
+    background-color: #87CEEB;
+    padding: 20px;
+}
+
+/* style untuk tombol pemilihan */
+.selection-content {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.selection-btn {
+    height: 32px;
+    border: 0;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+.bisque-color {
+    background-color: #F7D2C4;
+}
+
+.aqua-color {
+    background-color: #87CEEB;
+}
+
+/* style untuk main-content */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* stylee untuk aside */
+aside {
+    width: 45%; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Menyembunyikan elemen section berdasarkan ID */
+section#segitiga-content, 
+section#jajar-genjang-content {
+    display: none; 
+}
+
+/* style untuk header pada setiap bagian operasi hitung bangun ruang (segitiga&jajargenjang) */
+.luas-segitiga-header, .keliling-segitiga-header,
+.luas-jajar-genjang-header, .keliling-jajar-genjang-header {
+    padding: 10px 0;
+    background: cadetblue;
+    text-align: center;
+}
+
+/* stylw untuk konten setiap bagian operasi hitung bangun ruang (segitiga&jajargenjang) */
+.luas-segitiga-content, .keliling-segitiga-content,
+.luas-jajar-genjang-content, .keliling-jajar-genjang-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* style untuk gambar pada setiap bagian operasi hitung bangun ruang (segitiga&jajargenjang) */
+.luas-segitiga-img, .keliling-segitiga-img,
+.luas-jajar-genjang-img, .keliling-jajar-genjang-img {
+    height: 200px; 
+    width: 200px; 
+    background-size: cover;
+    background-position: center;
+    margin: 20px 0; 
+}
+
+/* image yang digunakan untuk semua operasi hitung bangun ruang (segitiga&jajargenjang) */
+.luas-segitiga-img {
+    background-image: url(https://cdn-web.ruangguru.com/landing-pages/assets/hs/gambar%20alas%20dan%20tinggi%20segitiga.png);
+}
+
+.keliling-segitiga-img {
+    background-image: url(https://media.baamboozle.com/uploads/images/55385/1618452200_4332.png);
+}
+
+.luas-jajar-genjang-img {
+    background-image: url(https://uptdsmpn3bangkalan.sch.id/wp-content/uploads/2024/01/jajar-genjang.webp);
+}
+
+.keliling-jajar-genjang-img {
+    background-image: url(https://www.quipper.com/id/blog/wp-content/uploads/2021/07/Jajargenjang-b.png);
+}
+
+/* style untuk input form */
+.input-wrapper {
+    margin: 10px 0;
+}
+
+.input-wrapper label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-wrapper input[type=number], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+}
+
+/* style untuk tombol */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* style untuk tombol hitung */
+button[type="button"] {
+    background-color: cadetblue;
+    color: white;
+}
+
+/* style untuk tombol reset */
+.reset-luas,
+.reset-keliling,
+.reset-luas-jg,
+.reset-keliling-jg {
+    background-color: yellow;
+    color: black;
+}
+
+/* style untuk hasil perhitungan */
+p[id^="result-"] {
+    font-weight: bold;
+}
+
+/* Media query untuk responsive */
+@media only screen and (max-width: 480px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 90%;
+    }
+}
+
+/* style untuk bagian footer*/
+.main-footer {
+    background-color: #87CEEB; 
+    color: black; 
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
